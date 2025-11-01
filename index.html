@@ -1,127 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Armeen Taeb</title>
-  <!-- Bootstrap CSS (optional if you want styling) -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <style>
-    .navbar-header h1 {
-      margin: 0;
-    }
-    .navbar-nav {
-      margin-top: 10px; /* optional spacing */
-    }
-  </style>
-</head>
-<body>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+  }
+
+  /* Full-width navbar background */
+  .navbar {
+    border: none;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+  }
+
+  /* Centered max-width container */
+  .navbar-inner {
+    max-width: 800px;  /* match your .narrow-text width */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* same as .narrow-text padding */
+  }
+
+  .navbar h1 {
+    margin: 0;
+    font-size: 26px;
+  }
+
+  .navbar h1 a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  .navbar-nav {
+    display: flex !important;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .navbar-nav > li > a {
+    font-size: 18px;
+    padding: 8px 15px;
+    color: #000;
+    text-decoration: none; /* remove underline */
+
+  }
+
+  .narrow-text {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.7;
+    font-size: 18px;
+    color: #333;
+  }
+
+
+.narrow-text a {
+    color: #3b7ddd;       /* softer blue for normal state */
+    text-decoration: underline; /* optional: underline for body links */
+  }
+
+  .narrow-text a:hover {
+    color: #2a5cb0;       /* slightly darker on hover */
+    text-decoration: underline;
+  }
+
+.navbar-nav > li > a:hover {
+  color: #000; /* black on hover too, or you can pick a darker shade */
+}
+.navbar-header {
+  padding-left: 100px;   /* move whole header block right */
+}
+.navbar h1 {
+  margin-left: 20px;   /* move the h1 right by 20px */
+}
+
+</style>
 
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Name on top -->
-    <div class="navbar-header" style="width: 100%;">
-      <h1><a href="index.html" title="Home Page">Armeen Taeb</a></h1>
-    </div>
+  <div class="navbar-inner">
+    <h1><a href="index.html" title="Home Page">Armeen Taeb</a></h1>
 
-    <!-- Tabs below name -->
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a style="font-size:20px;" href="research.html">Research</a></li>
-        <li><a style="font-size:20px;" href="teaching.html">Teaching</a></li>
-      </ul>
-    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+    </ul>
   </div>
 </nav>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <style>
-  </style>
-
 </br>
 
-
-<div>
+<div class="narrow-text">
   <figure style="float:left;margin-left:20px;margin-right:20px;">
-      <img src="armeen_pic.jpeg" alt="" style="width:350px;height:235px">
-      <figcaption><i>Photo by Biyue Pan </i> </figcaption>
-    </figure>
-  <p style="max-width:1200px;margin-left:20px;margin-right:1em">    
-Department of Statistics, University of Washington</br>
-Email: ataeb@uw.edu</br>	
-<a href="CV_website.pdf">CV (updated October 2024)</a></br>
-<a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F4D3C2ZEOamSQo1qfjUH0rJUwF7MibgNpn9B72zJeAicjl9BdbIcL4eyOwO_Cdzs14WTHQvKOG0igCn_RzRjGXcdmaIYQ&user=wAwg1tAAAAAJ">Google Scholar Profile</a></br>
-</br>
- I am an assistant professor in the  <a href="https://stat.uw.edu/">Department of Statistics</a> at the University of Washington. I was a postdoctoral fellow of <a href="https://math.ethz.ch/sfs/eth-foundations-of-data-science.html">ETH Foundations of Data Science (ETH-FDS)</a> at ETH Z&uumlrich, mentored by <a href="https://stat.ethz.ch/~peterbu/">Peter B&uumlhlmann</a>. Previously, under the supervision of <a href="http://users.cms.caltech.edu/~venkatc/">Venkat Chandrasekaran</a>, I obtained my PhD in the Department of Electrical Engineering at Caltech.</br></br> 
+    <img src="armeen_pic.jpeg" alt="" style="width:350px;height:235px">
+    <figcaption><i>Photo by Biyue Pan </i></figcaption>
+  </figure>
 
-My research interests lie at the interface of optimization and statistics. My work currently focuses on model selection in non-traditional settings, learning provably optimal causal models from data, and developing efficient methods for graphical and latent-variable modeling.
-I am also interested in exploring the utility of statistical methodologies for real-world applications, especially in physical sciences. </br></br> 
-	
-<span style="font-weight:bold">Funding:</span> I am grateful for support by the National Science Foundation with grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2413074&HistoricalAwards=false">DMS-2413074</a> (PI) and by the <a href="https://www.washington.edu/research/or/royalty-research-fund-rrf/">Royalty Research Fund at the University of Washington </a>(PI).</br></br> 
+  <p style="max-width:1200px;margin-left:20px;margin-right:1em">
+    Department of Statistics, University of Washington</br>
+    Email: ataeb@uw.edu</br>
+    <a href="CV_website.pdf">CV (updated October 2024)</a></br>
+    <a href="https://scholar.google.com/citations?hl=en&user=wAwg1tAAAAAJ">Google Scholar Profile</a></br>
+    </br>
 
-<span style="font-weight:bold">PhD students:</span> I am currently looking for highly motivated PhD students. If you are a UW PhD student or have just been admitted, feel free to reach out to learn more and to talk about specific research ideas!</br></br> 
+    <br></br>
+      <br></br>
 
-<span style="font-weight:bold">Service for new researchers:</span> I am passionate about giving young researchers in data science a platform to grow as researchers and individuals. I am now serving as the president of the <a href="https://imsnrg.com"> IMS New Researcher Group</a>. I co-organized the IMS New Researchers Conference in <a href="https://nrc2024.github.io/">2024</a> and <a href="https://nrc2025.github.io/">2025</a>. If you have any suggestions for how to help young researchers, please do not hesitate to email me!
-
-</p>
+    I am an assistant professor in the <a href="https://stat.uw.edu/">Department of Statistics</a> at the University of Washington. I was a postdoctoral fellow of <a href="https://math.ethz.ch/sfs/eth-foundations-of-data-science.html">ETH Foundations of Data Science (ETH-FDS)</a> at ETH Z&uumlrich, mentored by <a href="https://stat.ethz.ch/~peterbu/">Peter B&uumlhlmann</a>. Previously, under the supervision of <a href="http://users.cms.caltech.edu/~venkatc/">Venkat Chandrasekaran</a>, I obtained my PhD in the Department of Electrical Engineering at Caltech.</br></br> My research interests lie at the interface of optimization and statistics. My work currently focuses on model selection in non-traditional settings, learning provably optimal causal models from data, and developing efficient methods for graphical and latent-variable modeling. I am also interested in exploring the utility of statistical methodologies for real-world applications, especially in physical sciences. </br></br> <span style="font-weight:bold">Funding:</span> I am grateful for support by the National Science Foundation with grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2413074&HistoricalAwards=false">DMS-2413074</a> (PI) and by the <a href="https://www.washington.edu/research/or/royalty-research-fund-rrf/">Royalty Research Fund at the University of Washington </a>(PI).</br></br> <span style="font-weight:bold">PhD students:</span> I am currently looking for highly motivated PhD students. If you are a UW PhD student or have just been admitted, feel free to reach out to learn more and to talk about specific research ideas!</br></br> <span style="font-weight:bold">Service for new researchers:</span> I am passionate about giving young researchers in data science a platform to grow as researchers and individuals. I am now serving as the president of the <a href="https://imsnrg.com"> IMS New Researcher Group</a>. I co-organized the IMS New Researchers Conference in <a href="https://nrc2024.github.io/">2024</a> and <a href="https://nrc2025.github.io/">2025</a>. If you have any suggestions for how to help young researchers, please do not hesitate to email me!
+  </p>
 </div>
 
-
-
-
-<!--
-<div class="bs-docs-section">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="page-header">
-                   <p style="font-size:25px" id="talks"> <font color="maroon">&ensp;<b> Invited Talks </font></b></p>
-                </div>
-               </div>
-
-<ul style="list-style-type:none">
-<li><a href= "perturbations.pdf" target="_blank" onclick="captureOutboundLink('perturbations.pdf');">"Perturbations and Causality in Guassian Latent Variable Models"</a></br>
-&nbsp;&nbsp;&nbsp;&nbsp; CMStatistics, 2021 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; Online Causal Inference Seminar, 2021 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; SIAM Conference on Algebraic Geometry, 2021 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; SIAM Conference on Optimization, 2021 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; Seminar for Statistics and Data Science, TU M&uumlnich, 2021 </br>
-</li>
-</ul>
-<ul style="list-style-type:none">
-<li><a href= "final_discovery.pdf" target="_blank" onclick="captureOutboundLink('final_discovery.pdf');">"False Discovery and Its Control in Low-Rank Estimation"</a></br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Statistics@UPF Seminars, 2020 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; SIAM Conference on Optimization, 2020 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; SIAM Conference of Algebraic Geometry, 2019 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; Department of Computer Science, Northeastern, 2018 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; Laboratory for Information and Decision Systems, MIT, 2018 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; Workshop on New Signal Models and their Information Content, Banff, 2018 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; Statistics Seminar, University of Chicago, 2018 </br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Seminar For Statistics: ETH Z&uumlrich, 2018 </br>
-</li>
-</ul>
-
-<ul style="list-style-type:none">
-<li><a href= "reservoirs.pptx" target="_blank" onclick="captureOutboundLink('reservoirs.pptx');">"From Data Science to Hydrology, California Reservoirs During Drought"</a></br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Wonderful Company HQ, 2018 </br>
-&nbsp;&nbsp;&nbsp;&nbsp;  RAND Corporation, 2018 </br>
-&nbsp;&nbsp;&nbsp;&nbsp;  San Francisco Water Public Utilities Commission, 2018 </br>
-</li>
-</ul>
-
-<ul style="list-style-type:none">
-<li><a href= "interpreting_latent.pdf" target="_blank" onclick="captureOutboundLink('interpreting_latent.pdf');">"Interpreting Latent Variables via Convex Optimization"</a></br>
-&nbsp;&nbsp;&nbsp;&nbsp;  SIAM Conference on Optimization, 2017 </br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Alerton Conference on Communication, Control, and Computing, 2018 </br>
-</li>
-</ul>
--->
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<!-- Bootstrap JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
-	
-	
-
 </html>

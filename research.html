@@ -1,38 +1,102 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Armeen Taeb</title>
-  <!-- Bootstrap CSS (optional if you want styling) -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <style>
-    .navbar-header h1 {
-      margin: 0;
-    }
-    .navbar-nav {
-      margin-top: 10px; /* optional spacing */
-    }
-  </style>
-</head>
-<body>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+  }
+
+  /* Full-width navbar background */
+  .navbar {
+    border: none;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+  }
+
+  /* Centered max-width container */
+  .navbar-inner {
+    max-width: 800px;  /* match your .narrow-text width */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* same as .narrow-text padding */
+  }
+
+  .navbar h1 {
+    margin: 0;
+    font-size: 26px;
+  }
+
+  .navbar h1 a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  .navbar-nav {
+    display: flex !important;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .navbar-nav > li > a {
+    font-size: 18px;
+    padding: 8px 15px;
+    color: #000;
+    text-decoration: none; /* remove underline */
+
+  }
+
+  .narrow-text {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.7;
+    font-size: 18px;
+    color: #333;
+  }
+
+
+.narrow-text a {
+    color: #3b7ddd;       /* softer blue for normal state */
+    text-decoration: underline; /* optional: underline for body links */
+  }
+
+  .narrow-text a:hover {
+    color: #2a5cb0;       /* slightly darker on hover */
+    text-decoration: underline;
+  }
+
+.navbar-nav > li > a:hover {
+  color: #000; /* black on hover too, or you can pick a darker shade */
+}
+.navbar-header {
+  padding-left: 100px;   /* move whole header block right */
+}
+.navbar h1 {
+  margin-left: 20px;   /* move the h1 right by 20px */
+}
+
+</style>
 
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Name on top -->
-    <div class="navbar-header" style="width: 100%;">
-      <h1><a href="index.html" title="Home Page">Armeen Taeb</a></h1>
-    </div>
+  <div class="navbar-inner">
+    <h1><a href="index.html" title="Home Page">Armeen Taeb</a></h1>
 
-    <!-- Tabs below name -->
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class = "active"><a style="font-size:20px;" href="research.html">Research</a></li>
-        <li><a style="font-size:20px;" href="teaching.html">Teaching</a></li>
-      </ul>
-    </div>
+    <ul class="nav navbar-nav">
+      <li class = "active"><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+    </ul>
   </div>
 </nav>
 
+
+</br>
+
+<div class="narrow-text">
   
 
 <div class="bs-docs-section">
@@ -221,6 +285,11 @@ Variational Inference"</a></br>
 &nbsp;&nbsp;&nbsp;&nbsp;<i>Cambridge University Press, London Mathematical Society Student Texts</i>, 2023
 </ul> </i>
 
+</div>
+
 
   </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </html>
