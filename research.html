@@ -15,14 +15,14 @@
   }
 
   /* Centered max-width container */
-  .navbar-inner {
-    max-width: 800px;  /* match your .narrow-text width */
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px; /* same as .narrow-text padding */
-  }
+.navbar-inner {
+  max-width: 960px; /* matches .narrow-text width */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
 
   .navbar h1 {
     margin: 0;
@@ -54,7 +54,7 @@
 }
 
   .narrow-text {
-    max-width: 800px;
+    max-width: 960px;
     margin: 20px auto;
     padding: 0 20px;
     line-height: 1.7;
@@ -77,10 +77,10 @@
   color: #000; /* black on hover too, or you can pick a darker shade */
 }
 .navbar-header {
-  padding-left: 100px;   /* move whole header block right */
+  padding-left: 0px;   /* move whole header block right */
 }
 .navbar h1 {
-  margin-left: 20px;   /* move the h1 right by 20px */
+  margin-left: 0px;   /* move the h1 right by 20px */
 }
 
 .narrow-text p.section-title {
@@ -107,6 +107,7 @@
     <ul class="nav navbar-nav">
       <li class = "active"><a href="research.html">Research</a></li>
       <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="mentoring.html">Mentoring</a></li>
     </ul>
   </div>
 </nav>
@@ -121,15 +122,23 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="page-header">
-                   <p style="font-size:25px" id="publications"> <font color="maroon">&ensp;<b> Research Topics and Papers </font></b></p>
+                   <h2 id="publications" style="font-size:25px; color:maroon; font-weight:bold; margin:0;">
+  Research Topics and Papers
+</h2>
                 </div>
                </div>
             </div>
 
 
 
-<p style="font-size:22px"><font color="black">  &nbsp;&nbsp;&nbsp;&nbsp;<b>Model selection in non-standard settings</font></b></p>   
-<ul style="list-style-type:none">  
+<h3 style="font-size:22px; color:black; font-weight:bold; margin-top:20px;">
+  Model selection in non-standard settings
+</h3>
+    <ul style="list-style-type:none; padding-left:0; margin-top:10px;">
+
+In problems like variable selection or graph estimation, models have simple Boolean structures—variables or edges being present or absent -- making errors easy to define and control. However, many modern models, such as those based on partitions, permutations, directed acyclic graphs, subspaces, or phylogenetic trees, lack this simple structure, complicating the formalization and control of model selection errors. We address this by representing model spaces as <em> partially ordered sets</em>, providing a unifying, principled framework for model selection.
+<p></p>
+
 
 <li><a href= "https://arxiv.org/pdf/2505.06760
 " target="_blank" onclick="captureOutboundLink('https://arxiv.org/pdf/2505.06760');">"Quantifying Uncertainty and Stability Among Highly Correlated Predictors: a Subspace Perspective
@@ -153,9 +162,17 @@
 
 <p></p>
 
-<p style="font-size:22px"><font color="black">  &nbsp;&nbsp;&nbsp;&nbsp;<b>Causal inference: discovery and robust predictions</font></b></p>   
-<ul style="list-style-type:none">  
-	
+
+<h3 style="font-size:22px; color:black; font-weight:bold; margin-top:20px;">
+Causal inference: discovery and robust predictions
+</h3>
+
+
+    <ul style="list-style-type:none; padding-left:0; margin-top:10px;">
+Causal reasoning is often seen as the ultimate goal of science. My work in this area follows two threads. The first focuses on causal discovery — the challenge of reliably uncovering causal relationships from data. Existing optimization-based methods often learn suboptimal causal models. I address this by leveraging advances in <em> convex mixed-integer programming </em>. The second thread studies domain adaptation, the problem of learning prediction models that generalize out-of-distribution. By targeting underlying causal mechanisms, we develop methods “geared towards causality” that achieve robust predictions beyond the training data, while relying on weaker assumptions than full causal identifiability
+
+	<p></p>
+
 (* indicates equal contributions)
 <p></p>
 	
@@ -196,9 +213,14 @@ Gaussian Models
 
 	
 <p></p>
+<h3 style="font-size:22px; color:black; font-weight:bold; margin-top:20px;">
+Latent-variable modeling: algorithms and applications</h3>
 
-<p style="font-size:22px"><font color="black">  &nbsp;&nbsp;&nbsp;&nbsp;<b>Latent-variable modeling: algorithms and applications</font></b></p>   
-<ul style="list-style-type:none"> 
+    <ul style="list-style-type:none; padding-left:0; margin-top:10px;">
+
+Many driving factors of physical systems are latent or unobserved. Thus, understanding such systems and producing robust predictions crucially relies on accounting for the influence of the latent structure. My work addresses methodological and theoretical advances in important problems in latent-variable modeling.
+ 
+<p></p>
 
 <li><a href= "https://arxiv.org/abs/2410.19125
 " target="_blank" onclick="captureOutboundLink('https://arxiv.org/abs/2410.19125
@@ -262,12 +284,14 @@ Variational Inference"</a></br>
             <div class="row">
               <div class="col-lg-12">
                 <div class="page-header">
-                   <p style="font-size:25px" id="publications"> <font color="maroon">&ensp;<b> PhD Thesis </font></b></p>
+                    <h2 id="publications" style="font-size:25px; color:maroon; font-weight:bold; margin:0;">
+  PhD thesis
+</h2>
                 </div>
                </div>
             </div>
 
-<ul style="list-style-type:none">         
+    <ul style="list-style-type:none; padding-left:0; margin-top:10px;">
 <li><a href= "https://thesis.library.caltech.edu/11799/1/Taeb_thesis.pdf" target="_blank" onclick="captureOutboundLink('https://thesis.library.caltech.edu/11799/');">"Latent-variable Modeling: Algorithms, Inference, and Applications"</a></br>
 &nbsp;&nbsp;&nbsp;&nbsp;A. Taeb, California Institute of Technology, 2019 </br>
 &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">W. P. Carey & Co. Prize for oustanding thesis in Applied Mathematics</span>
@@ -281,12 +305,14 @@ Variational Inference"</a></br>
             <div class="row">
               <div class="col-lg-12">
                 <div class="page-header">
-                   <p style="font-size:25px" id="publications"> <font color="maroon">&ensp;<b> Books </font></b></p>
+                    <h2 id="publications" style="font-size:25px; color:maroon; font-weight:bold; margin:0;">
+  PhD thesis
+</h2>
                 </div>
                </div>
             </div>
 
-<ul style="list-style-type:none">         
+    <ul style="list-style-type:none; padding-left:0; margin-top:10px;">
 <li><a href= "https://www.cambridge.org/core/books/inverse-problems-and-data-assimilation/CD12492AFB6C17FA0440813C8FD445A3" target="_blank" onclick="captureOutboundLink('https://www.cambridge.org/core/books/inverse-problems-and-data-assimilation/CD12492AFB6C17FA0440813C8FD445A3');">"Inverse Problems and Data Assimilation"</a></br>
 &nbsp;&nbsp;&nbsp;&nbsp;D. Sanz-Alonso, A. Stuart, and A. Taeb  </br>
 &nbsp;&nbsp;&nbsp;&nbsp;<i>Cambridge University Press, London Mathematical Society Student Texts</i>, 2023
