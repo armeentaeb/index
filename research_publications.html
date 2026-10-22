@@ -105,7 +105,8 @@
     <h1><a href="index.html" title="Home Page">Armeen Taeb</a></h1>
 
     <ul class="nav navbar-nav">
-      <li class = "active"><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li class = "active"><a href="research_publications.html">Research Themes</a></li>
       <li><a href="teaching.html">Teaching</a></li>
       <li><a href="mentoring.html">Mentoring</a></li>
     </ul>
@@ -123,26 +124,24 @@
               <div class="col-lg-12">
                 <div class="page-header">
                    <h2 id="publications" style="font-size:25px; color:maroon; font-weight:bold; margin:0;">
-  Research Topics and Papers
+  Research Themes
 </h2>
                 </div>
                </div>
             </div>
 
 
-For papers in chronological order, see <a href = "https://scholar.google.com/citations?hl=en&user=wAwg1tAAAAAJ&view_op=list_works&sortby=pubdate"> here. </a>
-
 <p></p>
 (* indicates equal contributions)
 
 
 <h3 style="font-size:22px; color:black; font-weight:bold; margin-top:20px;">
-  Model selection in non-standard settings
+  False discovery control in non-standard settings
 </h3>
     <ul style="list-style-type:none; padding-left:0; margin-top:10px;">
 
-In problems like variable selection or graph estimation, models have simple Boolean structures—variables or edges being present or absent -- making errors easy to define and control. However, many modern models, such as those based on partitions, permutations, directed acyclic graphs, subspaces, or phylogenetic trees, lack this simple structure, complicating the formalization and control of model selection errors. We address this by representing model spaces as <em> partially ordered sets</em>, providing a unifying, principled framework for model selection.
-<p></p>
+As scientific discovery becomes increasingly data-driven, distinguishing replicable signals from noise is a central challenge. Modern AI-driven analyses compound this challenge by searching over vast, complex model spaces, making rigorous control of false discoveries more important than ever. Classical approaches typically consider models defined by binary inclusion decisions, such as selecting subsets of features. However, many modern problems involve richer structures, including directed acyclic graphs in causal inference and phylogenetic trees in evolutionary biology. How can we define and control false discoveries in such
+complex model spaces? <p></p>
 
 <li><a href= "https://arxiv.org/abs/2511.23433
 " target="_blank" onclick="captureOutboundLink('https://arxiv.org/abs/2511.23433');">"Consensus Tree Estimation with False Discovery Rate Control via Partially Ordered Sets"</a></br>
@@ -180,12 +179,12 @@ In problems like variable selection or graph estimation, models have simple Bool
 
 
 <h3 style="font-size:22px; color:black; font-weight:bold; margin-top:20px;">
-Causal inference: discovery and robust predictions
+Causal inference under uncertain graphical structure [
 </h3>
 
 
     <ul style="list-style-type:none; padding-left:0; margin-top:10px;">
-Causal reasoning is often seen as the ultimate goal of science. My work in this area follows two threads. The first focuses on causal discovery — the challenge of reliably uncovering causal relationships from data. Existing optimization-based methods often learn suboptimal causal models. I address this by leveraging advances in <em> convex mixed-integer programming </em>. The second thread studies domain adaptation, the problem of learning prediction models that generalize out-of-distribution. By targeting underlying causal mechanisms, we develop methods “geared towards causality” that achieve robust predictions beyond the training data, while relying on weaker assumptions than full causal identifiability
+Understanding causal relationships is a central goal of science. Causal graphs, such as directed acyclic graphs, provide a powerful framework for representing these relationships. In practice, however, causal graphs are rarely known with certainty: they may be specified using incomplete background knowledge, learned from data, or only partially identified. Moreover, learning causal graphs involves challenging combinatorial optimization problems, where the lack of optimality guarantees can undermine the reliability of the resulting structures. These challenges raise three fundamental questions: How can we learn causal graphs with both provable optimality and statistical guarantees? How can we rigorously quantify uncertainty over causal structures? And how can we draw robust causal conclusions when the underlying graph is uncertain?
 
 
 <p></p>
@@ -232,11 +231,11 @@ Gaussian Models
 	
 <p></p>
 <h3 style="font-size:22px; color:black; font-weight:bold; margin-top:20px;">
-Latent-variable modeling: algorithms and applications</h3>
+Learning from hidden and partially observed structures</h3>
 
     <ul style="list-style-type:none; padding-left:0; margin-top:10px;">
 
-Many driving factors of physical systems are latent or unobserved. Thus, understanding such systems and producing robust predictions crucially relies on accounting for the influence of the latent structure. My work addresses methodological and theoretical advances in important problems in latent-variable modeling.
+Many physical systems are governed by factors that are latent or unobserved, making it challenging to understand their underlying mechanisms and produce reliable predictions. Graphical models provide a powerful framework for representing dependencies among variables, including those arising from hidden factors. However, learning these structures poses significant statistical and computational challenges. Different data sources may contain shared and source-specific latent factors, observe only partially overlapping subsets of variables, or exhibit dependencies induced by unobserved confounding. These challenges raise fundamental questions: How can we disentangle shared and individual latent structures across data sources? How can we reconstruct a global graphical model from fragmented observations? And how can we reliably learn relationships in the presence of unobserved confounding?
  
 <p></p>
 
